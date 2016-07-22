@@ -1,0 +1,44 @@
+### This is the config file for Pecacheu's Elevator plugin.
+### You can adjust values here to globally change the behavior of elevators.
+
+title: '&1[&3Elevator&1]' # Header for ELEVATOR signs.
+call: '&1[&3Call&1]' # Header for CALL signs.
+error: '[&4???&r]' # Header for non-working signs.
+selStart: '&8> &5' # Start of selected floor line.
+selEnd: ' &8<' # End of selected floor line.
+
+msgGotoStart: '&eTraveling to &a' # Start of player message.
+msgGotoEnd: '&e.' # End of player message.
+msgCall: '&eCalling elevator.' # Player message for CALL signs.
+
+# Status symbols displayed on CALL signs:
+
+noMove:   '&4⦿  ⦿  ⦿  ⦿  ⦿  ⦿'
+mAtLevel: '&3⦿  ⦿  ⦿  ⦿  ⦿  ⦿'
+atLevel:  '&2⦿  ⦿  ⦿  ⦿  ⦿  ⦿'
+callUp:   '&3▲  ▲  ▲  ▲  ▲  ▲'
+up:       '&4△  △  △  △  △  △'
+callDown: '&3▼  ▼  ▼  ▼  ▼  ▼'
+down:     '&4▽  ▽  ▽  ▽  ▽  ▽'
+
+floorMaxRadius: 8  # Maximum floor size, in each direction from sign.
+travelSpeed: 25    # Elevator movment speed, in blocks-per-second.
+updateDelay: 5     # Delay between updates while moving. Increase to reduce lag.
+doorHoldTime: 4000 # Timeout before elevator doors are closed.
+saveInterval: 15   # Auto-save frequency in minutes.
+
+# List of blocks allowed as elevator floors:
+
+blockList:
+- IRON_BLOCK
+- GOLD_BLOCK
+- DIAMOND_BLOCK
+- EMERALD_BLOCK
+- GLASS
+
+doorBlock: 'THIN_GLASS' # Material used for elevator block-doors.
+
+# Stored elevator locations:
+
+### WARNING: DO NOT TOUCH THIS SETTING ###
+elevators: {}
